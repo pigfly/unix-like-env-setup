@@ -3,7 +3,7 @@
 "
 "Alex Jiang
 """"""""""""""""""""""""""""""""
-set history=100
+set history=1000
 set autoread
 
 set background=dark
