@@ -7,3 +7,6 @@ I take no responsibility if your data is corrupted or damaged. This script is in
 a convenient CLI only.
 
 ### Installation
+Copy & Paste into your shell:
+
+`curl -s https://raw.githubusercontent.com/pigfly/tutoring-rmit/master/install.sh | bash`

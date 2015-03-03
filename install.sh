@@ -23,6 +23,12 @@ echo "Install awesome vim, The ultimate Vim configuration: vimrc"
 git clone git://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
+# Install vimrc
+echo "Install simple vimrc"
+wget --no-check-certificate \
+https://raw.githubusercontent.com/pigfly/tutoring-rmit/master/.vimrc \
+> /dev/null 2>&1
+
 # Reload bash
 echo "Reloading bash"
 
