@@ -1,0 +1,66 @@
+#!/bin/bash
+
+sudo -v # ask for password only at the beginning
+
+
+#install homebrew
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+
+#install oh-my-zsh
+curl -L http://install.ohmyz.sh | sh
+
+#configure homebrew
+brew update
+brew upgrade
+brew tap homebrew/versions
+brew tap phinze/homebrew-cask
+
+
+#install cli apps
+brew install caskroom/cask/brew-cask
+brew install coreutils
+brew install git
+brew install vim
+brew install mackup
+brew install zsh
+
+# update cask
+brew upgrade brew-cask
+
+#install gui apps (with cask)
+brew cask install alfred
+brew cask install atom
+brew cask install dropbox
+brew cask install f-lux
+brew cask install flash
+brew cask install google-chrome
+brew cask install google-drive
+brew cask install hipchat
+brew cask install iterm2
+brew cask install node
+brew cask install Skype
+brew cask install sourcetree
+brew cask install sublime-text
+brew cask install testflight
+brew cask install toggldesktop
+brew cask install vagrant
+brew cask install virtualbox
+
+
+#custom quicklooks
+brew cask install qlcolorcode
+brew cask install qlstephen
+brew cask install qlmarkdown
+brew cask install quicklook-json
+brew cask install qlprettypatch
+brew cask install quicklook-csv
+brew cask install betterzipql
+brew cask install webp-quicklook
+brew cask install suspicious-package
+
+
+#allow brew cask apps to be found via alfred
+brew cask alfred link
+
+#link sublime for global 'sublime' command
+ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
