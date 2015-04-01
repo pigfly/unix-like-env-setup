@@ -9,5 +9,5 @@
   - **TODO** will add OSX setting later on
 
 ### License
-  ======
-  This repo is provided under the MIT license.
+======
+This repo is provided under the MIT license.
